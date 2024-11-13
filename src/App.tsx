@@ -1,16 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-200">
-      <h1 className="text-3xl font-bold underline text-blue-900">
-        Hello, Tailwind with Vite!
+    <div className="w-100 flex flex-col items-center justify-center h-screen bg-secondary">
+      <h1 className="text-[100px] font-bold font-roboto text-primary">
+        [Nestor Lopez]
       </h1>
+      <br />
+      <h1 className="font-oswald text-[50px] text-primary">This is a test</h1>
+      <br />
+      <span className="font-frank text-[20px] text-primary">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+        exercitationem laborum veniam! Veritatis, libero expedita! Beatae dolor,
+        quaerat, at tenetur non eveniet blanditiis dolorum ullam corporis totam
+        soluta. Veniam, reprehenderit.
+      </span>
     </div>
   );
 }
