@@ -1,11 +1,13 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import { createBrowserRouter, RouteObject } from "react-router-dom";
+import Home from "../pages/Home";
 
-const router = createBrowserRouter([
+const routes: RouteObject[] = [
   {
     path: "/",
-    Component: App,
+    Component: Home,
   },
-]);
+];
 
-export default router;
+export default createBrowserRouter(routes, {
+  basename: import.meta.env.BASE_URL,
+});
